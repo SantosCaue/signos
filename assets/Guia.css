@@ -85,6 +85,7 @@ label{
     text-align: left;
 }
 input[type=radio] {
+    cursor: pointer;
     opacity: 0;
     width: 0;
     height: 0;
