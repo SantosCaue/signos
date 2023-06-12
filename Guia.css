@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+    margin: 0 auto;
+}
+
+header,
+main,
+nav,
+footer {
+    width: 100%;
+}
+
+header,
+footer,
+nav {
+    font-family: 'Hammersmith One', sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background: #2E142F;
+    box-sizing: border-box;
+    color: white;
+}
+
+header {
+    height: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    height: 40px;
+}
+
+h1 {
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+}
+
+header,
+nav div {
+    display: flex;
+    align-items: center;
+    color: #78ABD9;
+    font-size: 4em;
+}
+
+nav div {
+    font-size: 1.5em;
+}
+
+header img {
+    height: 75px;
+}
+
+main {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("galaxia_bg.jpg");
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+form {
+    text-align: center;
+    margin-top: 0px;
+}
+label{
+    text-align: left;
+}
+input[type=radio] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    filter: brightness(10000%);
+
+}
+
+div#principal {
+    flex: 1;
+    text-align: left;
+    font-size: 1.7em;
+    color: #2E142F;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#secundario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 386px;
+    border-radius: 59px;
+    background-color: #CCCECE;
+    text-align: left;
+}
+
+#organizacao {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+#principal img {
+    height: 25px;
+}
+
+#respostas {
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+div.linha {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+    align-items: center;
+}
+
+div.answers {
+    margin: 10px 0px 24px 0px;
+    height: 1.7em;
+}
+
+#principal div div {
+    flex: 1;
+}
+
+div.ativo {
+    border-radius: 32px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 15%;
+    margin: 10px 0px 0px 0px;
+    width: 569px;
+    height: 74px;
+    background: #D9D9D9;
+    border: 4px solid #000000;
+    border-radius: 43px;
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+}
+
+#respostas p {
+    text-align: center;
+    color: #2E142F;
+    font-size: 1.5em;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+footer {
+    height: 30px;
+    align-items: center;
+}
