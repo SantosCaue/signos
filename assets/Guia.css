@@ -81,9 +81,11 @@ form {
     text-align: center;
     margin-top: 0px;
 }
-label{
+
+label {
     text-align: left;
 }
+
 input[type=radio] {
     cursor: pointer;
     opacity: 0;
@@ -91,14 +93,18 @@ input[type=radio] {
     height: 0;
 }
 
+span {
+    cursor: pointer;
+}
+
 /* IMAGE STYLES */
-[type=radio] + img {
+[type=radio]+img {
     filter: brightness(100%);
     cursor: pointer;
 }
 
 /* CHECKED STYLES */
-[type=radio]:checked + img {
+[type=radio]:checked+img {
     filter: brightness(10000%);
 
 }
@@ -168,8 +174,10 @@ div.ativo {
     border: 4px solid #000000;
     border-radius: 43px;
     display: flex;
-    align-items: center; /* Vertically center the text */
-    justify-content: center; /* Horizontally center the text */
+    align-items: center;
+    /* Vertically center the text */
+    justify-content: center;
+    /* Horizontally center the text */
 }
 
 #respostas p {
